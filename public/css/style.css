@@ -51,6 +51,7 @@ footer p {
 /* Pseudo styling */
 a:hover {
     color: var(--hover);
+    text-decoration: none;
 }
 
 /* Class styling */
