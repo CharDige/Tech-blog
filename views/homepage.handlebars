@@ -1,0 +1,9 @@
+<!-- Loop over each post in the post array -->
+{{#each posts as |post|}}
+<div class="card card-styling">
+    <div class="card-body-styling">
+        <h2 class="card-title">{{post.title}}</h5>
+        <p class="card-text card-text-styling">{{post.contents}}</p>
+    </div>
+</div>
+{{/each}}
