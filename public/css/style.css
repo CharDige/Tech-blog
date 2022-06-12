@@ -19,6 +19,10 @@ h1 a {
     color: var(--white);
 }
 
+h2 a {
+    color: var(--white);
+}
+
 li a {
     display: block;
     padding: 10px;
