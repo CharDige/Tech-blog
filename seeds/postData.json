@@ -1,0 +1,14 @@
+[
+    {
+        "title": "How I use MySQL",
+        "contents": "Even though you can use MySQL to do a lot of database creation and seeding data, I only ever use it to create schema.sql files."
+    },
+    {
+        "title": "jQuery vs vanilla JavaScript",
+        "contents": "Both these types of JavaScript language are really useful, but I always tend to fall back to using vanilla JavaScript over jQuery. Thoughts?"
+    },
+    {
+        "title": "dotenv npm package is LIFE",
+        "contents": "I cannot write enought about how much I appreciate the dotenv npm pacakage. Imagine not being able to hide sensitive data in code? Crazy!"
+    }
+]
