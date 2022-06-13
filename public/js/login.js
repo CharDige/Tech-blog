@@ -47,3 +47,8 @@ const signUpHandler = async (event) => {
     }
 };
 
+// Initiate signUpHandler function when sign up form submitted
+document.querySelector('.sign-up-form').addEventListener('submit', signUpHandler);
+
+// Initiate loginHandler function when log in form submitted
+document.querySelector('.log-in-form').addEventListener('submit', loginHandler);
