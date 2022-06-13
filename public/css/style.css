@@ -139,6 +139,7 @@ a:hover {
     font-family: var(--main-font-family);
     font-size: 18px;
     padding: 10px;
+    margin: 10px 0 70px 0;
 }
 
 
