@@ -21,3 +21,29 @@ const loginHandler = async (event) => {
         }
     }
 };
+
+const signUpHandler = async (event) => {
+    event.preventDefault();
+
+    // Collect values from sign up form
+    const name = document.querySelector('#sign-up-name-input').value.trim();
+    const email = document.querySelector('#sign-up-email-input').value.trim();
+    const password = document.querySelector('#sign-up-password-input').value.trim();
+
+    if (name && email && password) {
+        // Send POST request
+        const response = await fetch('/api/users', {
+            method: 'POST',
+            body: JSON.stringify({ name, email, password }),
+            headers: { 'Content-Type': 'application/json' },
+        });
+
+        if (response.ok) {
+            // If successful, redirect to the dashboard
+            document.location.replace('/dashboard');
+        } else {
+            alert(response.statusText);
+        }
+    }
+};
+
