@@ -54,6 +54,16 @@ a:hover {
     text-decoration: none;
 }
 
+#new-post-btn:hover {
+    color: var(--hover);
+    background-color: #005C1D;
+}
+
+.dashboard-post:hover {
+    background-color: #005C1D;
+    color: var(--hover);
+}
+
 /* Class styling */
 .navbar-styling {
     margin: 20px;
@@ -82,4 +92,74 @@ a:hover {
     padding: 10px;
     font-family: var(--main-font-family);
     font-size: 16px;
+}
+
+.dashboard-post {
+    margin: 20px 40px 20px 40px;
+    background-color: var(--green);
+    border: 5px solid var(--green);
+    color: var(--white);
+}
+
+.dashboard-card-title {
+    margin: 0;
+    font-family: var(--heading-font-family);
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+.dashboard-card-text {
+    margin: 0;
+    font-size: 18px;
+    font-family: var(--main-font-family);
+}
+
+.form-style {
+    margin: 20px 40px;
+}
+
+.input-title {
+    font-size: 18px;
+    font-family: var(--main-font-family);
+}
+
+.row-adjust {
+    --bs-gutter-x: 0;
+}
+
+.login-heading {
+    margin: 20px 40px;
+}
+
+
+/* id styling */
+#welcome-text {
+    font-size: 35px;
+    font-family: var(--main-font-family);
+    margin: 20px 40px 20px 40px;
+}
+
+#post-list-text {
+    font-size: 20px;
+    font-family: var(--main-font-family);
+    font-weight: bolder;
+    margin: 0 40px 0 40px;
+}
+
+#new-post-btn {
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+    padding: 10px;
+}
+
+#login-btn {
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+    padding: 10px;
 }
