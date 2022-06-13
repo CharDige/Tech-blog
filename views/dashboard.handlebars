@@ -8,18 +8,19 @@
 </p>
 
 {{#each posts as |post|}}
-<a href="/post/{{post.id}}" class="post-link">
-    <div class="card dashboard-post">
-        <div class="card-body">
+<div class="card dashboard-post">
+    <div class="card-body">
+        <a href="/updatepost/{{post.id}}" class="post-link">
             <h2 class="dashboard-card-title">
               {{post.title}}
             </h2>
-            <p class="dashboard-card-text">
-              Created on {{format_date post.date_created}}
-            </p>
-        </div>
+        </a>
+        <p class="dashboard-card-text">
+            Created on {{format_date post.date_created}}
+        </p>
+        <button type="button" class="btn delete-btn" data-id="{{post.id}}">Delete</button>
     </div>
-</a>
+</div>
 {{/each}}
 {{/if}}
 
@@ -29,3 +30,4 @@
     </div>
 </a>
 
+<script src="/js/delete-post.js"></script>
