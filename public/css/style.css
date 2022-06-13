@@ -54,7 +54,7 @@ a:hover {
     text-decoration: none;
 }
 
-#new-post-btn:hover {
+.btn-styling:hover {
     color: var(--hover);
     background-color: #005C1D;
 }
@@ -133,6 +133,14 @@ a:hover {
     margin: 20px 40px;
 }
 
+.btn-styling {
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+    padding: 10px;
+}
+
 
 /* id styling */
 #welcome-text {
@@ -146,20 +154,4 @@ a:hover {
     font-family: var(--main-font-family);
     font-weight: bolder;
     margin: 0 40px 0 40px;
-}
-
-#new-post-btn {
-    background-color: var(--green);
-    color: var(--white);
-    font-family: var(--main-font-family);
-    font-size: 18px;
-    padding: 10px;
-}
-
-#login-btn {
-    background-color: var(--green);
-    color: var(--white);
-    font-family: var(--main-font-family);
-    font-size: 18px;
-    padding: 10px;
 }
