@@ -59,8 +59,7 @@ a:hover {
     background-color: #005C1D;
 }
 
-.dashboard-post:hover {
-    background-color: #005C1D;
+.post-link:hover {
     color: var(--hover);
 }
 
@@ -108,6 +107,7 @@ a:hover {
 
 .post-link {
     text-decoration: none;
+    color: var(--white);
 }
 
 .dashboard-card-text {
@@ -140,6 +140,12 @@ a:hover {
     font-size: 18px;
     padding: 10px;
     margin: 10px 0 70px 0;
+}
+
+.delete-btn {
+    background-color: var(--white);
+    color: var(--green);
+    margin: 20px 0 10px 0;
 }
 
 
