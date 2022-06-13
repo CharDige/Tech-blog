@@ -1,4 +1,6 @@
 const updateHandler = async (event) => {
+    event.preventDefault();
+
     const title = document.querySelector('#post-title').value.trim();
     const contents = document.querySelector('#post-contents').value.trim();
 
@@ -19,4 +21,4 @@ const updateHandler = async (event) => {
     }
 };
 
-document.querySelector('#update-btn').addEventListener('submit', updateHandler);
+document.querySelector('.new-post').addEventListener('click', updateHandler);
