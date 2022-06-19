@@ -35,6 +35,7 @@ router.get('/post/:id', async (req, res) => {
                 {
                     model: Comment,
                     attributes: ['comment', 'date_created', 'user_id', 'post_id'],
+                    include: [User],
                 }
             ],
         });

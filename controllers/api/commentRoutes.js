@@ -9,7 +9,7 @@ router.get('/', withAuth, async (req, res) => {
                 {
                     model: User,
                     attributes: ['name'],
-                },
+                }
             ],
         });
 

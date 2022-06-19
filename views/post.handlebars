@@ -10,18 +10,12 @@
     </div>
 </div>
 
+
 <p id="post-list-text">
     Comments
 </p>
 
-<div class="card comment-box">
-    <div class="card-body comment-text">
-        <p class="card-text card-text-styling">
-            {{post.comment}}
-        </p>
-        <p class="card-text card-text-styling comment-details">Comment by {{post.comment.user.name}}, posted on {{post.comment.date_created}}</p>
-    </div>
-</div>
+{{> comment post.comments}}
 
 <form class="new-comment form-style">
     <div class="mb-3">
