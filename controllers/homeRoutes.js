@@ -34,7 +34,7 @@ router.get('/post/:id', async (req, res) => {
                 },
                 {
                     model: Comment,
-                    attributes: ['comment','date_created', User],
+                    attributes: ['comment', 'date_created', 'user_id', 'post_id'],
                 }
             ],
         });
@@ -42,7 +42,7 @@ router.get('/post/:id', async (req, res) => {
         const post = postData.get({ plain: true });
 
         res.render('post', {
-            ...post,
+            post,
             logged_in: req.session.logged_in
         });
     } catch (err) {
