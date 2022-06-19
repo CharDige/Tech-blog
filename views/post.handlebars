@@ -9,3 +9,24 @@
         <p class="card-text card-text-styling">{{contents}}</p>
     </div>
 </div>
+
+<p id="post-list-text">
+    Comments
+</p>
+
+<div class="card comment-box">
+    <div class="card-body comment-text">
+        <p class="card-text card-text-styling">
+            {{comment.comment}}
+        </p>
+        <p class="card-text card-text-styling comment-details">Comment by {{comment.user.name}}, posted on {{format_date comment.date_created}}</p>
+    </div>
+</div>
+
+<form class="new-post form-style">
+    <div class="mb-3">
+        <label for="post-comment" class="form-label input-title">Leave a comment</label>
+        <textarea class="form-control" id="post-comment" rows="5"></textarea>
+    </div>
+<button type="submit" class="btn btn-styling">Submit</button>
+</form>
