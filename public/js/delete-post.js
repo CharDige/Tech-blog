@@ -14,4 +14,8 @@ const deleteHandler = async (event) => {
     }
 };
 
-document.querySelector('.dashboard-post').addEventListener('click', deleteHandler);
+const deleteBtns = document.querySelectorAll(".delete-btn");
+
+for (var i = 0; i < deleteBtns.length; i++) {
+    deleteBtns[i].addEventListener('click', deleteHandler);
+};
