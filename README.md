@@ -8,6 +8,8 @@ This project required the creation of a CMS-style blog site, where users can wri
 
 It was required that the application followed the MVC paradigm in its architectural structure, used Handlebars.js as the templating language, used Sequelize as the ORM, and used the express-session npm package for authentication.
 
+> The deployed application can be viewed at: https://pacific-dusk-52662.herokuapp.com/
+
 ## Table of contents
 - [User story](#user-story)
 - [Acceptance criteria](#acceptance-criteria)
@@ -99,6 +101,50 @@ This project used the following technologies to build it:
 - Install express-session NPM package `npm install express-session`
 
 ## Usage
+
+Below, you will find screenshots of the deployed application in use.
+
+> You can also view the deployed application at https://pacific-dusk-52662.herokuapp.com/
+
+When the application is first opened, the user is greeted by the homepage, which is a list of all the current blog posts by all users on the application.
+
+![Website listing all tech blog posts](./images/screenshot-list-blog-posts.PNG)
+
+Whether a user is logged in or not, they will be able to click on the blog posts and read them in their entirety. However, only logged in users will be able to submit comments, whereas users who aren't logged in can try and submit a comment but none will appear.
+
+![Website showing only one blog post](./images/screenshot-individual-blog-post.PNG)
+
+If the user clicks on `dashboard` in the navigation, they will be prompted to log in or sign up (if they aren't already). The user can also click on "log in" to log in or sign up to the application.
+
+![Website showing a sign up form and a log in form](./images/screenshot-login-signup.PNG)
+
+Once the user logs in or signs up, they will be presented with the `dashboard`, which presents the user with all their past blog posts (if they have published any) and a button prompting users to create a new blog post. Each blog post will also have a delete button on it, in case the user wants to remove it from the application.
+
+![Website showing a dashboard, which lists all of the logged in user's blog posts](./images/screenshot-dashboard.PNG)
+
+If the user clicks on "create new blog post", they will be presented with a form asking for a title and the contents of the blog post. Then, they can submit the form, which will create the new post.
+
+![Website showing form to create a new blog post with data in inputs](./images/screenshot-new-blog-post-form.PNG)
+
+![New blog post listed on the dashboard screen](./images/screenshot-new-blog-on-dashboard.PNG)
+
+The user will also be able to update previous blog posts by clicking on the blog post title. This will then take the user to a similar form as when they created the blog post. However, the form will already be filled out with the current content. The user can then update the content as they need to and click 'update'.
+
+![Website showing form that's been updated in the data inputs](./images/screenshot-update-blog-post-form.PNG)
+
+![Updated blog post listed on the dashboard screen](./images/screenshot-updated-blog-on-dashboard.PNG)
+
+Logged in users can also post comments on blog posts, as mentioned earlier in this README. This can be done by either clicking on "Tech blog" or the "home" option in the navigation, then clicking on any of the blog posts listed.
+
+Once the logged in user is in the blog post, they can enter their comment in the input area and submit it. The comment will then appear, including details of the user who posted the comment and the date. And, there will also be an option for the user to delete the comment.
+
+![Website showing blog post and content in the comment input field](./images/screenshot-add-comment.PNG)
+
+![Website showing the comment on the blog post](./images/screenshot-comment-on-blog.PNG)
+
+Once the user is finished with what they wanted to do on the application, they can then log out by clicking on the 'log out' option in the navigation.
+
+![Website navigation with logout button underlined](./images/screenshot-logout.PNG)
 
 ## Credits
 
